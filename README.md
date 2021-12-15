@@ -25,7 +25,7 @@
 
 ## 💻 Projeto
 
-O Cultura.me é um website simples com a proposta de apresentar novos lugares turísticos e culturais do Brasil. Feito também para estudo do [Boostrap](https://getbootstrap.com/), [Acesse o app clicando aqui]()
+O Cultura.me é um website simples com a proposta de apresentar novos lugares turísticos e culturais do Brasil. Feito também para estudo do [Boostrap](https://getbootstrap.com/), [Acesse o website clicando aqui](https://brendon3578.github.io/Cultura.me/index.html)
 
 ## 🛠 Tecnologias
 
