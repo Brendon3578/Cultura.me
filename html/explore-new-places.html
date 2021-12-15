@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="../favicon.png">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="../style/reset.css">
+
+  <title>Cultura.me - Encontre novos lugares</title>
+</head>
+<body>
+  <header class="p-2 pt-3 border-bottom">
+    <div class="container d-flex flex-column flex-md-row justify-content-center align-items-center">
+      <h2 class="me-sm-4">
+        <a href="../index.html" class="text-decoration-none text-primary d-flex align-items-center">
+          <i class="fas fa-map-marked-alt me-1"></i>
+          Cultura<span class="text-dark">.me</span>
+        </a>
+      </h2>
+  
+      <form method="post" id="search_form" onsubmit="formSubmit(event)" class="w-100" style="max-width: 500px;">
+        <div class="input-group">
+          <input
+            type="search" class="form-control"
+            id="address"
+            aria-label="Buscar um lugar (estado, cidade, local. ex: São Paulo)"
+            placeholder="Buscar um lugar (estado, cidade, local. ex: São Paulo)"
+            aria-describedby="input-address"
+          >
+          <button type="submit" class="input-group-text bg-white text-primary">
+            <i class="fas fa-search d-flex e" id="input-address"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+
+  </header>
+
+  <main class="container p-2 p-md-4 py-4">
+
+    <div class="d-none alert alert-primary" role="alert" id="information"></div>
+  
+    <div class="row g-2 mb-3" id="place_list">
+
+      <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+        <h3 class="display-5 fw-normal">
+          Explore <span class="text-primary">novos lugares</span> de todo o Brasil.
+        </h3>
+        <p style="font-size: 18px;">
+          Escreva um nome de um local ou estado que desejar e encontre novos pontos turísticos.
+          Irá aparecer locais turísticos como: (Monumentos, Memoriais, Edifícios, Construções, Estátuas, Igrejas etc.)
+          <br>
+          <em style="font-size: 14px;">Certos pontos turísticos podem conter descrições em línguas estrangeiras</em>
+        </p>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <img
+          src="../image/search-place-illustration.svg"
+          alt="Começe procurando lugares"
+          class="img-fluid"
+        >
+      </div>
+      
+    </div>
+
+  </main>
+
+  <!-- axios script -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="../script/place.js"></script>
+</body>
+</html>

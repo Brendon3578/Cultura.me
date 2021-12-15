@@ -1,0 +1,98 @@
+* {
+  font-family: "Outfit", sans-serif;
+}
+
+:root {
+  --bs-primary: #3e885b;
+  --bs-primary-black-100: #387a53;
+  --bs-primary-rgb: 62, 136, 91;
+  --bs-primary-rgb-2: 62 136 91;
+}
+
+.btn-outline-primary {
+  color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+.btn-check:active + .btn-outline-primary,
+.btn-check:checked + .btn-outline-primary,
+.btn-outline-primary.active,
+.btn-outline-primary.dropdown-toggle.show,
+.btn-outline-primary:active {
+  color: #fff;
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+.btn-check:active + .btn-outline-primary:focus,
+.btn-check:checked + .btn-outline-primary:focus,
+.btn-outline-primary.active:focus,
+.btn-outline-primary.dropdown-toggle.show:focus,
+.btn-outline-primary:active:focus {
+  box-shadow: 0 0 0 0.25rem rgb(var(--bs-primary-rgb-2) / 50%);
+}
+
+.btn-check:focus + .btn-outline-primary,
+.btn-outline-primary:focus {
+  box-shadow: 0 0 0 0.25rem rgb(var(--bs-primary-rgb) / 50%);
+}
+
+/* input change color */
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: rgba(var(--bs-primary-rgb), 0.8);
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(var(--bs-primary-rgb-2) / 25%);
+}
+
+.list-group-item.active {
+  z-index: 2;
+  color: #fff;
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: var(--bs-primary-black-100);
+  border-color: var(--bs-primary-black-100);
+}
+
+.btn-check:active + .btn-primary,
+.btn-check:checked + .btn-primary,
+.btn-primary.active,
+.btn-primary:active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: var(--bs-primary-black-100);
+  border-color: var(--bs-primary-black-100);
+}
+
+.btn-check:focus + .btn-primary,
+.btn-primary:focus {
+  color: #fff;
+  background-color: var(--bs-primary-black-100);
+  border-color: var(--bs-primary-black-100);
+  box-shadow: 0 0 0 0.25rem rgb(var(--bs-primary-rgb-2) / 50%);
+}
+
+.btn-check:active + .btn-primary:focus,
+.btn-check:checked + .btn-primary:focus,
+.btn-primary.active:focus,
+.btn-primary:active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgb(var(--bs-primary-rgb-2) / 50%);
+}
