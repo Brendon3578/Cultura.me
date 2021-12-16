@@ -25,7 +25,7 @@
 
 ## 💻 Projeto
 
-O Cultura.me é um website simples com a proposta de apresentar novos lugares turísticos e culturais do Brasil. Feito também para estudo do [Boostrap](https://getbootstrap.com/), [Acesse o website clicando aqui](https://brendon3578.github.io/Cultura.me/index.html)
+O Cultura.me é um website simples com a proposta de apresentar novos lugares turísticos e culturais do Brasil. Feito também para estudo do [Bootstrap](https://getbootstrap.com/), [Acesse o website clicando aqui](https://brendon3578.github.io/Cultura.me/index.html)
 
 ## 🛠 Tecnologias
 
@@ -41,7 +41,7 @@ Utilitários
 
 ## ☕ Features
 
-- Boostrap v5.1.3 (website foi feito para estudar esse Framework)
+- Bootstrap v5.1.3 (website foi feito para estudar esse Framework)
 - API OpenTripMap (API pra buscar pontos turísticos, unica API que encontrei para mostrar os lugares e conter imagens sobre o lugar)
 
 ## 📝 Licença
